@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // studi kasus
+        // ada pelanggan membeli elektronik
+        // barang barangnya misal ada TV => 3 juta, Motor => 12 juta, kulkas => 4 juta
+
+        // tentukan pembelian barangnya apa da berapa yang beli
+        
+        // struktur kendali
+        let pelanggan = "Mirlani";
+        let produk = "motor";
+
+
+        if (produk == 'TV'){
+            total = 3000000;
+        }
+        else if (produk == "motor"){
+            total = 1200000;
+        }
+        else if (produk == "kulkas"){
+            total = 3000000;
+        }
+        else if (produk == "mobil"){
+            total = 11200000;
+        }else{
+            total = 0;
+        }
+
+        let jmlBeli = 10;
+        let broto = total * jmlBeli;
+
+        if (produk == "motor") {
+              diskon = 10;
+        }else{
+            diskon = 0;
+        }
+
+        let harga_diskon = broto - diskon;
+        document.write("Data Pembeli " + 
+        "<br> Pelanggan: " + pelanggan +
+        "<br> Produk yang dibeli: " + produk +
+        "<br> harga satuan: " + total +
+        "<br> total harga dari pembeli: " + broto +
+        "<br> total diskon: " + harga_diskon
+        );
+
+
+    </script>
+</body>
+</html>
