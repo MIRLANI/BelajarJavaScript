@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // masuk keperulangan for loop
+
+        document.write('Bilangan 1 ' + '<br> Bilangan 2 ' + '<br> Bilangan 3');
+        document.write('<hr> Cetak bilangan 1 sampai 50');
+
+        // contoh perulangan menggunaan for menggunakan menggunakan operator increment
+
+        for (let angka = 0; angka <= 50; angka++) {
+            document.write('<br> Bilangan = ' + angka);
+            
+        }
+
+        document.write('<hr>');
+        // contoh perulangan for yang menggunakan opertor decrement
+        for(bil = 50; bil >= 1; bil--){
+            document.write('<br> Bilangan = ' + bil);
+             
+        }
+
+        // memisahkan bilngan ganjil dan genap
+
+        document.write('<br>');
+        for (ganjil = 0; ganjil <= 20; ganjil++) {
+            if (ganjil % 2 == 1 ){
+                document.write('<br> Bilangan Ganjil = ' + ganjil);
+            }else{
+                document.write('<br> Bilangan Genap = ' + ganjil);
+            }
+        }
+    </script>
+</body>
+</html>

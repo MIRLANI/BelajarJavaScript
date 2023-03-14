@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let pelanggan = "Mirlani";
+        let produk = "TV";
+        let hasrat = 0;
+        let array = [];
+
+        switch (produk) {
+            case "TV": hasrat = 300000; break;
+            case "motor": hasrat = 400000; break;
+            case "kulkas": hasrat = 100000; break;
+        }
+        let jmlBeli = 3;
+        let bruto = hasrat + jmlBeli;
+        if (produk == "TV"){
+            diskon = 0.3;
+        }else if (produk == "motor") {
+            diskon = 0.5
+        }
+
+        totalDiskon = hasrat - diskon;
+        document.write("Data Pembeli" +
+        "<br> Pelanggan : " + pelanggan + 
+        "<br> Produk : " + produk +
+        "<br> Jumlah beli produk " + jmlBeli + 
+        "<br> Harga Satuan : " + hasrat +
+        "<br> Total harga : " + bruto + 
+        "<br> Harga diskon : " + diskon +
+        "<br> Sehingga total diskon : " + totalDiskon);
+    </script>
+</body>
+</html>
