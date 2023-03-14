@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Alamat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <script>
+                    var no, warna;
+                    for (no = 1; no<=20; no++){
+                        warna = (no % 2 == 1) ? 'yellow' : 'blue';
+                        document.write('<tr bgcolor="${warna}">');
+                        
+                    }
+                </script>
+                <tr>
+                    <td>1</td>
+                    <td>Muhammad Mirlani</td>
+                    <td>Desa Sombu </td>
+                </tr>
+            </tbody>
+        </table>
+    </h3>
+</body>
+</html>
