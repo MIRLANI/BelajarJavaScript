@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.6.4.js"></script>
+  </head>
+  <body>
+
+    <script>
+      // A $( document ).ready() block.
+      $(document).ready(function () {
+        // pemanggilan jquery dengan pembanggilan selector gag
+        $("input").click(function () {
+          alert("Selamat Belajar Jquery");
+        });
+
+        // pembuatan jquery menggunakan id
+        $("#panggil").css("color", "orange");
+
+        $(".class").css('color',"red");
+
+        $("p").hide("slow");
+        $('.p').slideDown(200)
+      });
+    </script>
+
+    <h3 id="panggil">selamat datang yang di pembelajaran jquery </h3>
+    <h2 class="class">menggunakan pemanggilan class </h2>
+    <input type="submit" value="salam" />
+
+    <p>textnya akan hilang</p>
+    <p class=".p">ini akan slideDown</p>
+
+
+
+  </body>
+</html>
